@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- <meta http-equiv="Content-Type" content="application/xhtml+xml"> -->
+  <title>Погода</title>
+  <link rel="shortcut icon" href="img/logo.svg" type="image/png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	  <div class="weather">
+    <div class="weather__inner">
+      <div class="current">
+          <input list="city" placeholder="Выбирете город" name="city-input" id="city-input" autocomplete="off">
+          <datalist id="city">
+            <option value="Chisinau"></option>
+            <option value="Washington"></option>
+            <option value="London"></option>
+            <option value="Antibes"></option>              
+            <option value="Beijing"></option>
+            <option value="Moscow"></option>
+            <option value="Rome"></option>
+            <option value="Amsterdam"></option>
+            <option value="Tokyo"></option>
+            <option value="Oslo"></option>
+            <option value="Yakutsk"></option>
+          </datalist>
+        <h1 class="current__city"> -- </h1>
+        <div class="current__icon"> -- </div>
+        <div class="current__description"> -- </div>
+        <div class="current__temperature"> --˚</div>
+      </div>
+
+      <div class="forecast">
+        <div class="forecast__item">
+          <div class="forecast__time">Now</div>
+          <div class="forecast__icon"></div>
+          <div class="forecast__temperature"> --˚</div>
+        </div>
+
+        <div class="forecast__item">
+          <div class="forecast__time"> 14:00 </div>
+          <img src="img/01d.svg" class="forecast__icon"></img>
+          <div class="forecast__temperature"> 18˚</div>
+        </div>
+
+        <div class="forecast__item">
+          <div class="forecast__time"> 15:00 </div>
+          <img src="img/01d.svg" class="forecast__icon"></img>
+          <div class="forecast__temperature"> 18˚</div>
+        </div>
+
+        <div class="forecast__item">
+          <div class="forecast__time"> 16:00 </div>
+          <img src="img/02d.svg" class="forecast__icon"></img>
+          <div class="forecast__temperature"> 19˚</div>
+        </div>
+
+        <div class="forecast__item">
+          <div class="forecast__time"> 17:00 </div>
+          <img src="img/03d.svg" class="forecast__icon"></img>
+          <div class="forecast__temperature"> 19˚</div>
+        </div>
+
+        <div class="forecast__item">
+          <div class="forecast__time"> 18:00 </div>
+          <img src="img/02d.svg" class="forecast__icon"></img>
+          <div class="forecast__temperature"> 19˚</div>
+        </div>
+      </div>
+
+      <div class="details">
+        <div class="details__row">
+          <div class="details__item feelslike">
+            <h2 class="details__name">feels like</h2>
+            <div class="details__wrapper">
+            	<img src="img/feels_like.svg" alt="">
+            	<div class="details__value"> -- ℃</div>
+        	</div>
+          </div>
+          <div class="details__item pressure">
+            <h2 class="details__name">pressure</h2>
+            <div class="details__wrapper">
+            	<img src="img/pressure.svg" alt="">
+            	<div class="details__value"> -- hPa</div>
+        	</div>
+          </div>
+        </div>
+        <div class="details__row">
+          <div class="details__item humidity">
+            <h2 class="details__name">humidity</h2>
+            <div class="details__wrapper">
+            	<img src="img/humidity.svg" alt="">
+            	<div class="details__value"> -- %</div>
+        	</div>
+          </div>
+          <div class="details__item wind">
+            <h2 class="details__name">wind</h2>
+            <div class="details__wrapper">
+            	<img src="img/wind.svg" alt="">
+            	<div class="details__value"> -- m/s</div>
+        	</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <a href="https://openweathermap.org/"><img class="logopart" src="img/logopart.svg" alt=""></a>
+        <p class="link">
+          <a href="https://www.instagram.com/dinalupsha/" >dinalupsha</a> & <a href="https://www.instagram.com/dimitriskidis/" >dimitriskidis</a>
+        </p>
+    </div>
+    </div>
+  </div>
+	<script src="js/main.js"></script>
+</body>
+</html>
+
